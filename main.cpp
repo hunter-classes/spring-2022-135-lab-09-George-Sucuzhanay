@@ -15,6 +15,7 @@ int main()
   
   std::cout << length(&pointP) << std::endl;
 
-  
-  
+  Coord3D posA = {0, 0, 100.0};
+  Coord3D velA = {1, -5, 0.2};
+
 }

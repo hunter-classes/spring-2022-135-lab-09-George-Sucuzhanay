@@ -1,9 +1,8 @@
 #include <iostream>
 #include "coord3d.h"
-
 #include "funcs.h"
-
 #include <cmath>
+
 // add functions here
 
 double length(Coord3D* p)
@@ -27,4 +26,17 @@ double fixLength(double l, int precision)
 {
 	double p = pow(10, precision);
 	return ((int)(l*p)) / p;
+}
+
+Coord3D* createCoord3D(double x, double y, double z)
+{
+	Coord3D *p = new Coord3D();
+	p->x = x;
+	p->y = y;
+	p->z = z;
+	return p;
+}
+void deleteCoord3D(Coord3D *p)
+{
+	delete p;
 }
